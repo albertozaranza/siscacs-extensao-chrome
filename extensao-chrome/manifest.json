@@ -1,0 +1,23 @@
+{
+    "manifest_version": 2,
+    "name": "SISACS - Extensão",
+    "version": "1.0",
+    "description": "Preencha os campos automaticamente!",
+    "page_action": {
+        "default_popup": "popup.html"
+    },
+    "background": {
+        "scripts": ["eventPage.js"],
+        "persistent": false
+    },
+    "content_scripts": [
+        {
+            "matches": ["file:///C:/Users/alber/Desktop/Nova%20pasta/aba2.html"],
+            "js": ["content.js"]
+        }
+    ],
+    "permissions": [
+        "tabs",
+        "file:///C:/Users/alber/Desktop/Nova%20pasta/aba2.html"
+    ]    
+}
